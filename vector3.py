@@ -35,6 +35,15 @@ class Vector3:
     def __str__(self):
         return f"Vector3({self.x}, {self.y}, {self.z})"
     
+    def __iter__(self):
+        yield self.x
+        yield self.y
+        yield self.z
+
+
+if __name__ == "__main__":
+    print(*Vector3(1, 2, 3))
+    
 
 
     

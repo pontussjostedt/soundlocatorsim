@@ -21,7 +21,7 @@ class BufferedMicrophone:
         while True:
             new_value = sum([sound_source.get_sound(self.env.now, self.pos) for sound_source in self.sound_sources])
             self._buffer.offer(new_value)
-            self.all_data.append(new_value)
+            #self.all_data.append(new_value)
             if self.extra_info:
                 self.extra_info(self)
             yield self.env.timeout(1 / self.sample_rate)

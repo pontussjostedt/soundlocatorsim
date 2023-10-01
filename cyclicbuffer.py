@@ -56,3 +56,4 @@ if __name__ == "__main__":
 
 
     print(f"Using index {[buffer[x] for x in range(4)]}")
+    print(*CyclicBuffer(4))
